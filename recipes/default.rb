@@ -29,7 +29,6 @@ ark 'maven' do
   url             node['maven'][mvn_version]['url']
   checksum        node['maven'][mvn_version]['checksum']
   home_dir        node['maven']['m2_home']
-  win_install_dir node['maven']['m2_home']
   version         node['maven'][mvn_version]['version']
   append_env_path true
 end
